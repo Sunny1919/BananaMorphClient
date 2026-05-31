@@ -10,7 +10,7 @@ public class EntityTickHandler
      */
     public static void cancelIfIsDisguiseAndNotSyncing(CallbackInfo ci, Object entity)
     {
-        var syncers = DisguiseInstanceTracker.getInstance().getAllSyncer();
+        var syncers = DisguiseInstanceTracker.getInstance().getSyncersDirect();
 
         // 遍历所有Syncer
         for (DisguiseSyncer syncer : syncers)
