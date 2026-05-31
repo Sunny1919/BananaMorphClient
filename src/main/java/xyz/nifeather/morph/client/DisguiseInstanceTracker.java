@@ -154,6 +154,11 @@ public class DisguiseInstanceTracker extends MorphClientObject
         return new ObjectArrayList<>(idSyncerMap.values());
     }
 
+    public java.util.Collection<DisguiseSyncer> getSyncersDirect()
+    {
+        return idSyncerMap.values();
+    }
+
     public void removeSyncer(DisguiseSyncer targetSyncer)
     {
         targetSyncer.dispose();
